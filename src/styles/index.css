@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-padding: 1rem;
+}
+
+body {
+  @apply text-primary-dark;
+}
+
+.container-outer {
+  @apply grid place-items-center p-4;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-xl p-6 md:p-10 max-w-2xl w-full;
+}
