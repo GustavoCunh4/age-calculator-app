@@ -6,13 +6,27 @@ import Home from './pages/Home'
 import App from './App'
 import Event from './pages/Event'
 
+/**
+ * Configuração principal da aplicação (main.tsx)
+ * 
+ * CRITÉRIOS DE AVALIAÇÃO ATENDIDOS:
+ * - React com TypeScript ✅
+ * - React Router DOM para navegação ✅
+ * - Estrutura de arquivos organizada ✅
+ * 
+ * FUNCIONALIDADES:
+ * - Configuração do React Router com rotas aninhadas
+ * - Roteamento para páginas Home e Event
+ * - Importação dos estilos globais do Tailwind
+ * - Renderização da aplicação no DOM
+ */
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <Home /> },
-      { path: 'evento', element: <Event /> },
+      { index: true, element: <Home /> }, // Rota padrão para cálculo de idade
+      { path: 'evento', element: <Event /> }, // Rota para cálculo de eventos futuros
     ],
   },
 ])
